@@ -1,60 +1,208 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 00px;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;   
-    padding: 13px;
-    background-color: dodgerblue;
-  }
 
-  .right-side {
-    font-family: fantasy;
-    margin-right: 150px;
-    color: aliceblue;
-    font-size: 0.999rem;
-    letter-spacing: 4px;
+
+*{
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}    
+
+.header{
+  display:block;
+  position:relative;
+  text-align: right;
+  height:60px;
+  font-size: 25px;
+  letter-spacing: 3px;
+  margin-right: 60px;
+  line-height:60px;
+} 
+.navbar{
+  display:block;
+  position:sticky;
+  top:0;
+}
+.navbar ul{
+  display:inline-block;
+  height:50px;
+  background-color: #002648;
+  width:100%;
+  list-style: none;
+  text-align: center;
+  line-height: 50px;
+}
+
+.navbar ul li{
+  float:left;
+  font-size: 23px;
+  width:18%;
+  height:50px;
+}
+
+.nav-btn{
+  display:none;
+}
+.navbar ul img{
+  height:50px;
+}
+
+.navbar ul li a{
+  color: white;
+  font-size: 23px;
+  text-decoration: none;
+  letter-spacing: 2px;
+
+}
+.navbar ul li:hover{
+  background-color:grey;
+}
+
+.navbar ul li:hover a{
+  color:black;
+}
+.events{
+  box-sizing: border-box;
+}
+
+.Slide{
+  display:none;
+}
+.Slide img{
+  vertical-align: middle;
+  width:100%;
+  height: 800px;
+}
+.slideshow{
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+}
+.Caption{
+  color:black;
+  font-size: 22px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  top: 50%;
+  padding: 16px;
+  color:black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.Dots{
+  text-align: center;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+}
+.active {
+  background-color: gray;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}  
+
+
+
+@media screen and (max-width: 850px) {
+
+  .header{
+      text-align: right;
+      margin-right: 5px;
+  }
+  .navbar{
+      display:block;
+      position:sticky;
+      top:0;
+  }
+  .navbar ul{
+      display:none;
   }
   
-  .left-side {
-    display: flex;
-    justify-content: space-between;    
-    color: aliceblue;
+  .navbar ul.active{
+      display:inline-block;
+      width: 100%;
+      height:400px;
+      background-color: #002648;
+      list-style: none;
+      text-align: center;
+      line-height: 80px;
+  }
+  .navbar ul img{
+      display: none;
+  }
+  .navbar ul li{
+      height: 80px;
+      width:100%;
+      text-align: center;
   }
   
-  .navbar > .left-side > div {
-    margin-right: 40px;
-    font-size: 0.9rem;
-    letter-spacing: 2px;
-  }
+  .navbar ul li a{
+      color: white;
+      font-size: 30px;
+      text-decoration: none;
+      letter-spacing: 2px;
   
-  .nav-link-wrapper {
-    height: 22px;
-    color: aliceblue;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.8s;
   }
-  
-  .active-nav-link {
-    border-bottom: 1px solid whitesmoke;
+  .navbar ul li:hover{
+      background-color: grey;
   }
-  
-  .active-nav-link a {
-    color: whitesmoke!important;
+  .navbar ul li:hover a{
+      color:black;
   }
-  
-  .nav-link-wrapper a {
-    color: whitesmoke;
-    text-decoration: none;
-    transition: color 0.8s;
+  .nav-btn{
+      display: block;
+      font-size:35px;
+      background-color: #002648;
+      color:white;
+      height:50px;
   }
-  
-  .nav-link-wrapper:hover {
-    border-bottom: 1px solid black;
+  .nav-btn img{
+      height:50px;
+      float: right;
   }
-  
-  .nav-link-wrapper a:hover {
-    color: black;
-  }
+  .caption {font-size: 11px}
+
+}    
