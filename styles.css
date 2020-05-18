@@ -13,11 +13,14 @@ body {
   display:block;
   position:relative;
   text-align: right;
-  height:60px;
+  height:65px;
   font-size: 25px;
   letter-spacing: 3px;
   margin-right: 60px;
   line-height:60px;
+  background: black;
+  width: 100%;
+  color: white;
 } 
 .navbar{
   display:block;
@@ -61,6 +64,19 @@ body {
 
 .navbar ul li:hover a{
   color:black;
+}
+.home{
+  top: 0;
+  bottom:0;
+  height:500px;
+  background: #bcdcff;
+}
+.home img{
+  height: 300px;
+  float: left;
+}
+.home p{
+  color: #002648;
 }
 .events{
   box-sizing: border-box;
