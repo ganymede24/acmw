@@ -16,7 +16,7 @@ body {
   height:65px;
   font-size: 25px;
   letter-spacing: 3px;
-  margin-right: 60px;
+  margin-right: 00px;
   line-height:60px;
   background: black;
   width: 100%;
@@ -93,6 +93,7 @@ body {
 .slideshow{
   max-width: 90%;
   position: relative;
+  z-index:-1;	
   margin: auto;
 }
 .Caption{
