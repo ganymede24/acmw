@@ -16,7 +16,6 @@ body {
   height:65px;
   font-size: 25px;
   letter-spacing: 3px;
-  margin-right: 00px;
   line-height:60px;
   background: black;
   width: 100%;
@@ -25,6 +24,8 @@ body {
 .navbar{
   display:block;
   position:sticky;
+  z-index: 1;
+  height: 50px;
   top:0;
 }
 .navbar ul{
@@ -59,7 +60,7 @@ body {
 
 }
 .navbar ul li:hover{
-  background-color:white;
+  background-color: silver;
 }
 
 .navbar ul li:hover a{
@@ -93,7 +94,6 @@ body {
 .slideshow{
   max-width: 90%;
   position: relative;
-  z-index:-1;	
   margin: auto;
 }
 .Caption{
@@ -204,7 +204,7 @@ body {
   
   }
   .navbar ul li:hover{
-      background-color: grey;
+      background-color:silver;
   }
   .navbar ul li:hover a{
       color:black;
