@@ -236,3 +236,67 @@ body {
   .caption {font-size: 11px}
 
 }    
+.team{
+    background-color: rgb(214, 228, 248);
+    font-style: serif;
+}
+
+.team .wrapper{
+    margin-top: 7%;
+}
+
+.team .wrapper h1{
+    font-size: 52px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: rgb(13, 42, 85);
+}
+
+.team_members{
+    display: flex;
+    text-align: center;
+    width: auto;
+
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team_members .team_member{
+    background-color: #fff;
+    margin: 10px;
+    margin-bottom: 100px;
+    width: 375px;
+    padding: 20px;
+    position: relative;
+}
+
+.team_members .team_member h3{
+    color: darkslateblue;
+    font-size: 27px;
+    margin-top: 0px;
+}
+
+.team_members .team_member p.role{
+    color: deepskyblue;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
+.team_members .team_member .team_img{
+    width: 200px;
+    height: 200px;
+
+}
+
+.team_members .team_member .team_img img{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+}
