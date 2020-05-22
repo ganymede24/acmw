@@ -67,17 +67,30 @@ body {
   color:black;
 }
 .home{
-  top: 0;
-  bottom:0;
-  height:500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 450px;
+  background: #bcdcff;
+  flex-wrap: wrap;
+}
+.home .imgbx{
+  height: 350px;
+  width: 450px;
   background: #bcdcff;
 }
-.home img{
-  height: 300px;
-  float: left;
+.home .imgbx img{
+  height: 350px;
+  width: 450px;
 }
-.home p{
-  color: #002648;
+.home .content{
+  height: 250px;
+  width: 750px;
+  background: #bcdcff;
+}
+.home .content p{
+  color: black;
+  font-size: 23px;
 }
 .events{
   box-sizing: border-box;
