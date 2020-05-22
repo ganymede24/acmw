@@ -77,7 +77,7 @@ body {
 .home .imgbx{
   height: 350px;
   width: 450px;
-  background: #bcdcff;
+  background: rgb(214, 228, 248);
 }
 .home .imgbx img{
   height: 350px;
@@ -86,7 +86,7 @@ body {
 .home .content{
   height: 250px;
   width: 750px;
-  background: #bcdcff;
+  background: rgb(214, 228, 248);
 }
 .home .content p{
   color: black;
