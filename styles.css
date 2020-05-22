@@ -71,7 +71,7 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 450px;
-  background: #bcdcff;
+  background: rgb(214, 228, 248);
   flex-wrap: wrap;
 }
 .home .imgbx{
