@@ -91,6 +91,7 @@ body {
 .home .content p{
   color: black;
   font-size: 23px;
+  background: rgb(214, 228, 248);
 }
 .events{
   box-sizing: border-box;
