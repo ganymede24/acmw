@@ -58,6 +58,46 @@
           </div>
         </div>
         <br>
+        <center>
+          <div class="initiatives" id="initiatives">
+          <h2 style="text-align: center;">INITIATIVES</h2>
+          <br>
+          <button type="button" class="collapsible">Section 1</button>
+          <div class="content">
+            <p>First nhnnbfg vftyv bgghjk ggrdd frthjk bggyfsfgth ggbrefc fvtyjtnt dfbh,miy dfbvrtn brthtyn ,i;op/[ wefrfff4 vrverqxsct nbybrtb gthyjujt reg57yb ergt6tge eg4h5 tgtjumuj gbrthyt rnuju ytju nytju tjyuk ikujmyh ftwfqsc byhytsbg</p>
+          </div>
+          <button type="button" class="collapsible">Section 2</button>
+          <div class="content">
+            <p>Second fdvtrhunwevrb fgtbb dbrth5y muikyv erfverw btmh fvwqv tbnyty7r dad vdb bhthtrh gbthrj jujkil hthbewthb gh46theh thytyj ryjhmiliu brnhiophnrg gbhthythrjyyj</p>
+          </div>
+          <button type="button" class="collapsible">Section 3</button>
+          <div class="content">
+            <p>Third</p>
+          </div>
+          
+          <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+         
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                content.style.display = "none";
+              } else {
+                content.style.display = "block";
+              }
+            });
+          }
+          </script>
+        </center>          
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 style="text-align: center;">EVENTS</h2>
+        <br>
         <div class="events" id="events">
             <div class="slideshow">
                 <div class="Slide fade">
@@ -114,9 +154,12 @@
             dots[slideIndex-1].className += " active";
             
             setTimeout(showSlides, 5000); 
-        }
-
+        }     
         </script>
+
+
+    
+       
         <div class="team" id="team">
             <div class="wrapper">
                 <h1>OUR TEAM</h1>
