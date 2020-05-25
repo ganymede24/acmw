@@ -91,6 +91,42 @@ body {
   font-size: 23px;
   background: rgb(214, 228, 248);
 }
+
+.collapsible {
+  background-color: #223;
+  color: white;
+  cursor: pointer;
+  padding: 22px;
+  width: 50%;
+  border: groove;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0.2,0.2);
+}
+
+.active, .collapsible:hover {
+  background-color: #4682B4;
+  align-items: center;
+  width: 53%;
+  justify-content: center;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0.2,0.2);
+}
+
+.content {
+  width: 47.7%;
+  padding: 40px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1; 
+  text-align: centre;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0.2,0.2);
+}
+
+div.content.show {
+    display: block !important;
+}
+
 .events{
   box-sizing: border-box;
 }
