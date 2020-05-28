@@ -92,40 +92,49 @@ body {
   background: rgb(214, 228, 248);
 }
 
-.collapsible {
-  background-color: #223;
-  color: white;
+.initiative{
+  font-size: 52px;
+  padding: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: rgb(13, 42, 85);
+  font-family: Arial;
+}
+
+.accordion {
+  background-color: rgb(214, 228, 248);
   cursor: pointer;
-  padding: 22px;
-  width: 50%;
-  border: groove;
+  padding: 18px;
+  margin: 0;
+  font-weight: 300;
   text-align: left;
-  outline: none;
-  font-size: 18px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0.2,0.2);
+  width:60%;
+  border: groove;
+  font-family: Garamond,Times,Perputua;
+  font-size: 25px;
 }
 
-.active, .collapsible:hover {
-  background-color: #4682B4;
-  align-items: center;
-  width: 53%;
-  justify-content: center;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0.2,0.2);
+.active, .accordion:hover, .accordion:hover::after {
+  background-color: rgb(4,4,93);
+  color: white;
+  width: 64%;
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+  font-family: Garamond,Times,Perputua;
+  font-size: 30px;
 }
 
-.content {
-  width: 47.7%;
-  padding: 40px;
-  display: none;
+
+.accordion-panel {
+  padding: 0 18px;
   overflow: hidden;
-  background-color: #f1f1f1; 
-  text-align: centre;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  width: 64%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0.2,0.2);
+  font-family: Garamond,Times,Perputua;
+  font-size: 20px;
 }
 
-div.content.show {
-    display: block !important;
-}
 
 .events{
   box-sizing: border-box;
