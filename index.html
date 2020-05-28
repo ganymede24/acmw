@@ -60,50 +60,64 @@
         <br>
         <center>
           <div class="initiatives" id="initiatives">
-          <h2 style="text-align: center;">INITIATIVES</h2>
+          <h1 class="initiative">INITIATIVES</h1>
           <br>
-          <button type="button" class="collapsible">Section 1</button>
-          <div class="content">
-            <p>First nhnnbfg vftyv bgghjk ggrdd frthjk bggyfsfgth ggbrefc fvtyjtnt dfbh,miy dfbvrtn brthtyn ,i;op/[ wefrfff4 vrverqxsct nbybrtb gthyjujt reg57yb ergt6tge eg4h5 tgtjumuj gbrthyt rnuju ytju nytju tjyuk ikujmyh ftwfqsc byhytsbg</p>
-          </div>
-          <button type="button" class="collapsible">Section 2</button>
-          <div class="content">
-            <p>Second fdvtrhunwevrb fgtbb dbrth5y muikyv erfverw btmh fvwqv tbnyty7r dad vdb bhthtrh gbthrj jujkil hthbewthb gh46theh thytyj ryjhmiliu brnhiophnrg gbhthythrjyyj</p>
-          </div>
-          <button type="button" class="collapsible">Section 3</button>
-          <div class="content">
-            <p>Third</p>
+          <h2 class="accordion">Section 1</h2>
+          <div class="accordion-panel">
+          <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do jkjknmmk eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
           </div>
           
-          <script>
-          var acc = document.getElementsByClassName("collapsible");
-          var panel = document.getElementsByClassName("content");
-              
-          for (var i = 0; i < acc.length; i++) {
-              acc[i].onclick = function() {
-                  var setClasses = !this.classList.contains('active');
-                  setClass(acc, 'active', 'remove');
-                  setClass(panel, 'show', 'remove');
-                                
-                  if (setClasses) {
-                      this.classList.toggle("active");
-                      this.nextElementSibling.classList.toggle("show");
-                  }
-              }
-          }
-              
-          function setClass(els, className, fnName) {
-              for (var i = 0; i < els.length; i++) {
-                  els[i].classList[fnName](className);
-              }
-          }
-          </script>
-        </center>          
+
+          <h2 class="accordion">Section 2</h2>
+          <div class="accordion-panel">
+          <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat jui nhif  rje sklsosnd inmkdns djncmcjd nksnccj djfnccks kdkcnsk alodj c.</p><br>
+          </div>
+
+          <h2 class="accordion">Section 3</h2>
+          <div class="accordion-panel">
+          <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
+          </div>
+
+
+        <script>
+        
+        let accHeading = document.querySelectorAll(".accordion");
+        let accPanel = document.querySelectorAll(".accordion-panel");
+
+        for (let i = 0; i < accHeading.length; i++) {
+            accHeading[i].onclick = function() {
+                if (this.nextElementSibling.style.maxHeight) {
+                   hidePanels();      
+                } else {
+                   showPanel(this);  
+                } 
+            };
+        }
+        
+        
+        function showPanel(elem) {
+          hidePanels();
+          elem.classList.add("active");
+        elem.nextElementSibling.style.maxHeight = elem.nextElementSibling.scrollHeight + "px";
+        }
+        
+         
+        function hidePanels() {
+          for (let i = 0; i < accPanel.length; i++) {
+              accPanel[i].style.maxHeight = null;
+              accHeading[i].classList.remove("active");
+            }
+        }
+        </script>
+        </center> 
         <br>
         <br>
         <br>
         <br>
-        <h2 style="text-align: center;">EVENTS</h2>
+        <h1 class="initiative">EVENTS</h1>
         <br>
         <div class="events" id="events">
             <div class="slideshow">
