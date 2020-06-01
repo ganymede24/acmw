@@ -58,6 +58,59 @@
           </div>
         </div>
         <br>
+        <div class="initiatives" id="initiatives">
+          <center>
+          <h1 class="initiative">INITIATIVES</h1>
+          <br>
+          <h2 class="accordion">Section 1</h2>
+          <div class="accordion-panel">
+          <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do jkjknmmk eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
+            </div>
+          <h2 class="accordion">Section 2</h2>
+          <div class="accordion-panel">
+          <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat jui nhif  rje sklsosnd inmkdns djncmcjd nksnccj djfnccks kdkcnsk alodj c.</p><br>
+          </div>
+
+          <h2 class="accordion">Section 3</h2>
+          <div class="accordion-panel">
+          <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
+          </div>
+            
+        <script>       
+        let accHeading = document.querySelectorAll(".accordion");
+        let accPanel = document.querySelectorAll(".accordion-panel");
+
+        for (let i = 0; i < accHeading.length; i++) {
+            accHeading[i].onclick = function() {
+                if (this.nextElementSibling.style.maxHeight) {
+                   hidePanels();      
+                } else {
+                   showPanel(this);  
+                } 
+            };
+        }
+        
+        
+        function showPanel(elem) {
+          hidePanels();
+          elem.classList.add("active");
+        elem.nextElementSibling.style.maxHeight = elem.nextElementSibling.scrollHeight + "px";
+        }
+        
+         
+        function hidePanels() {
+          for (let i = 0; i < accPanel.length; i++) {
+              accPanel[i].style.maxHeight = null;
+              accHeading[i].classList.remove("active");
+            }
+        }
+        </script>
+        </center> 
+       </div>
+        <br>
         <div class="events" id="events">
             <div class="slideshow">
                 <div class="Slide fade">
@@ -76,7 +129,6 @@
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>    
-
             <div class="Dots">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
@@ -96,7 +148,6 @@
         function currentSlide(n) {
             showSlides(slideIndex = n);
         }
-
         function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("Slide");
@@ -117,6 +168,7 @@
         }
 
         </script>
+      
         <div class="team" id="team">
             <div class="wrapper">
                 <h1>OUR TEAM</h1>
