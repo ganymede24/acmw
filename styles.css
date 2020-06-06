@@ -1,3 +1,5 @@
+
+
 *{
   margin:0;
   padding:0;
@@ -94,50 +96,6 @@ body {
   font-size: 23px;
   background: rgb(214, 228, 248);
 }
-
-.initiative{
-  font-size: 52px;
-  padding: 20px;
-  margin-bottom: 10px;
-  text-align: center;
-  color: rgb(13, 42, 85);
-  font-family: Arial;
-}
-
-.accordion {
-  background-color: rgb(214, 228, 248);
-  cursor: pointer;
-  padding: 18px;
-  margin: 0;
-  font-weight: 300;
-  text-align: left;
-  width:60%;
-  border: groove;
-  font-family: Garamond,Times,Perputua;
-  font-size: 25px;
-}
-
-.active, .accordion:hover, .accordion:hover::after {
-  background-color: rgb(4,4,93);
-  color: white;
-  width: 64%;
-  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
-  font-family: Garamond,Times,Perputua;
-  font-size: 30px;
-}
-
-
-.accordion-panel {
-  padding: 0 18px;
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
-  width: 64%;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0.2,0.2);
-  font-family: Garamond,Times,Perputua;
-  font-size: 20px;
-}
-
 .events{
   box-sizing: border-box;
 }
@@ -416,7 +374,7 @@ footer{
 /* Footer left */
  
 .footer-distributed .footer-left{
-	width: 30%;
+	width: 25%;
 }
  
 .footer-distributed h3{
@@ -428,7 +386,7 @@ footer{
 /* The company logo */
  
 .footer-distributed .footer-left img{
-	width: 70%;
+	width: 60%;
 }
  
 .footer-distributed h3 span{
@@ -459,7 +417,8 @@ footer{
 /* Footer Center */
  
 .footer-distributed .footer-center{
-	width: 35%;
+	width: 40%;
+    margin-left: 0px;
 }
  
  
@@ -497,7 +456,7 @@ footer{
  
 .footer-distributed .footer-center p a{
 	color:  #4fb5e8;
-	text-decoration: none;;
+	text-decoration: none;
 }
  
  
@@ -505,6 +464,7 @@ footer{
  
 .footer-distributed .footer-right{
 	width: 30%;
+    margin: 0px;
 }
  
 .footer-distributed .footer-company-about{
@@ -520,7 +480,7 @@ footer{
 	color:  #ffffff;
 	font-size: 18px;
 	font-weight: bold;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 }
  
 .footer-distributed .footer-icons{
@@ -532,7 +492,7 @@ footer{
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  ##4fb5e8;
+	background-color:  #4fb5e8;
 	border-radius: 2px;
  
 	font-size: 20px;
@@ -548,7 +508,7 @@ footer{
 /* You can remove below code if you don't want Footer to be responsive */
  
  
-@media (max-width: 880px) {
+@media (max-width: 800px) {
  
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-center,
@@ -557,12 +517,15 @@ footer{
 		width: 100%;
 		margin-bottom: 40px;
 		text-align: center;
+        
 	}
  
-	.footer-distributed .footer-center i{
-		margin-left: 0;
+	/*.footer-distributed .footer-center i{
+		margin-left: 0;*/
 	}
- 
+    
+    /*.footer-distributed .footer-right{
+		margin: 0;*/
 }
 
 .form-style-6{
@@ -625,9 +588,5 @@ footer{
 	border-left-style: none;	
 	color: #fff;
 }
-.form-style input:hover,
-{
-	background: #4fb5e8;
-}
-/*</style>*/
 
+/*</style>*/
