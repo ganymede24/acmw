@@ -59,60 +59,26 @@
         </div>
         <br>
         <div class="initiatives" id="initiatives">
-            <center>
             <h1 class="initiative">Initiatives</h1>
-            <br>
-            <br>
-            <br>
-            <h2 class="accordion">Section 1</h2>
-            <div class="accordion-panel">
-            <br>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do jkjknmmk eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
-              </div>
-            <h2 class="accordion">Section 2</h2>
-            <div class="accordion-panel">
-            <br>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat jui nhif  rje sklsosnd inmkdns djncmcjd nksnccj djfnccks kdkcnsk alodj c.</p><br>
+        
+          <div class="flex-container">
+            <div class="panel">
+              <h2>Initiative 1</h2>
+              <h5>
+              <p><br>Lorhem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></h5>  
             </div>
-
-            <h2 class="accordion">Section 3</h2>
-            <div class="accordion-panel">
-            <br>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
+            <div class="panel">
+              <h2>Initiative 2</h2>
+              <h5>
+              <p><br>Lorhem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></h5>  
             </div>
-
-          <script>
-          let accHeading = document.querySelectorAll(".accordion");
-          let accPanel = document.querySelectorAll(".accordion-panel");
-
-          for (let i = 0; i < accHeading.length; i++) {
-              accHeading[i].onclick = function() {
-                  if (this.nextElementSibling.style.maxHeight) {
-                     hidePanels();
-                  } else {
-                     showPanel(this);
-                  }
-              };
-          }
-
-
-          function showPanel(elem) {
-            hidePanels();
-            elem.classList.add("act");
-          elem.nextElementSibling.style.maxHeight = elem.nextElementSibling.scrollHeight + "px";
-          }
-
-
-          function hidePanels() {
-            for (let i = 0; i < accPanel.length; i++) {
-                accPanel[i].style.maxHeight = null;
-                accHeading[i].classList.remove("act");
-              }
-          }
-          </script>
-          </center>
-         </div>
-         <hr>
+            <div class="panel">
+              <h2>Initiative 1</h2>
+              <h5>
+              <p><br>Lorhem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></h5>  
+            </div>
+          </div>
+        <br>
         <div class="events" id="events">
             <div class="slideshow">
                 <div class="Slide fade">
