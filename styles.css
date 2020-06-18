@@ -1,3 +1,5 @@
+
+
 *{
   margin:0;
   padding:0;
@@ -94,50 +96,6 @@ body {
   font-size: 23px;
   background: rgb(214, 228, 248);
 }
-
-.initiative{
-  font-size: 52px;
-  padding: 20px;
-  margin-bottom: 10px;
-  text-align: center;
-  color: rgb(13, 42, 85);
-  font-family: Arial;
-}
-
-.accordion {
-  background-color: rgb(214, 228, 248);
-  cursor: pointer;
-  padding: 18px;
-  margin: 0;
-  font-weight: 300;
-  text-align: left;
-  width:60%;
-  border: groove;
-  font-family: Garamond,Times,Perputua;
-  font-size: 25px;
-}
-
-.active, .accordion:hover, .accordion:hover::after {
-  background-color: rgb(4,4,93);
-  color: white;
-  width: 64%;
-  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
-  font-family: Garamond,Times,Perputua;
-  font-size: 30px;
-}
-
-
-.accordion-panel {
-  padding: 0 18px;
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
-  width: 64%;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0.2,0.2);
-  font-family: Garamond,Times,Perputua;
-  font-size: 20px;
-}
-
 .events{
   box-sizing: border-box;
 }
@@ -348,3 +306,884 @@ body {
   transform: translateX(-50%);
   background-color: #fff;
 }
+/*<style type="text/css">
+{
+	padding:0;
+	margin:0;
+}
+ 
+html{
+	background-color: white;
+}
+ 
+body{
+	font:16px/1.6 Arial,  sans-serif;
+}
+ 
+header{
+	text-align: center;
+	padding-top: 100px;
+	margin-bottom:190px;
+}
+ 
+header h1{
+	font: normal 32px/1.5 'Open Sans', sans-serif;
+	color: #3F71AE;
+	padding-bottom: 0;
+}
+ 
+header h2{
+	color: #F05283;
+}
+ 
+header span{
+	color: #3F71EA;
+}
+ 
+ */
+/*The footer is fixed to the bottom of the page */
+ 
+footer{
+	position: fixed;
+	bottom: 0;
+}
+ 
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+ 
+ 
+.footer-distributed{
+	background-color: #2c292f;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 0;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+.wrap-text{
+overflow-wrap:anywhere;}
+/* Footer left */
+ 
+.footer-distributed .footer-left{
+	width: 25%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+/* The company logo */
+ 
+.footer-distributed .footer-left img{
+	width: 60%;
+}
+ 
+.footer-distributed h3 span{
+	color:  #4fb5e8;
+}
+ 
+/* Footer links */
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #4fb5e8;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+/* Footer Center */
+ 
+.footer-distributed .footer-center{
+	width: 40%;
+    margin-left: 0px;
+}
+ 
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #4fb5e8;
+	text-decoration: none;
+}
+ 
+ 
+/* Footer Right */
+ 
+.footer-distributed .footer-right{
+	width: 30%;
+    margin: 0px;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color: #4fb5e8;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #4fb5e8;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+ 
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+ 
+ 
+@media (max-width: 800px) {
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+        
+	}
+ 
+	/*.footer-distributed .footer-center i{
+		margin-left: 0;*/
+	}
+    
+    /*.footer-distributed .footer-right{
+		margin: 0;*/
+}
+
+
+.form-style-6{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 16px;
+	background: #4fb5e8;
+}
+.form-style h1{
+	background: #4fb5e8;
+	padding: 20px 0;
+	font-size: 200%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+.form-style input,
+.form-style textarea,
+.form-style select 
+{   background: #fff;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style input:focus,
+
+.form-style textarea:focus,
+.form-style select:focus
+{
+	box-shadow: 0 0 5px #4fb5e8;
+	padding: 3%;
+	border: 1px solid #4fb5e8;
+}
+
+.form-style input[type="submit"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+    font-weight: 300;
+	background: #4fb5e8;
+	border-bottom: 2px solid #4fb5e8;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+	color: #fff;
+}
+
+/*</style>*/
+
+
+
+*{
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}    
+
+.header{
+  display:block;
+  position:relative;
+  text-align: right;
+  height:65px;
+  font-size: 25px;
+  letter-spacing: 3px;
+  line-height:60px;
+  background: black;
+  width: 100%;
+  color: white;
+} 
+.navbar{
+  display:block;
+  position:sticky;
+  z-index: 1;
+  height: 50px;
+  top:0;
+}
+.navbar ul{
+  display:inline-block;
+  height:50px;
+  background-color: #002648;
+  width:100%;
+  list-style: none;
+  text-align: center;
+  line-height: 50px;
+}
+
+.navbar ul li{
+  float:left;
+  font-size: 23px;
+  width:18%;
+  height:50px;
+}
+
+.nav-btn{
+  display:none;
+}
+.navbar ul img{
+  height:50px;
+}
+
+.navbar ul li a{
+  color: white;
+  font-size: 23px;
+  text-decoration: none;
+  letter-spacing: 2px;
+
+}
+.navbar ul li:hover{
+  background-color: silver;
+}
+
+.navbar ul li:hover a{
+  color:black;
+}
+.home{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  background: rgb(214, 228, 248);
+  flex-wrap: wrap;
+}
+.home .imgbx{
+  height: 300px;
+  width: auto;
+  background: rgb(214, 228, 248);
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.home .imgbx img{
+  height: 300px;
+  width: auto;
+}
+.home .content{
+  height: auto;
+  width: 750px;
+  background: rgb(214, 228, 248);
+}
+.home .content p{
+  color: black;
+  font-size: 23px;
+  background: rgb(214, 228, 248);
+}
+.events{
+  box-sizing: border-box;
+}
+
+.Slide{
+  display:none;
+}
+.Slide img{
+  vertical-align: middle;
+  width:100%;
+  height: 800px;
+}
+.slideshow{
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+}
+.Caption{
+  color:black;
+  font-size: 22px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  top: 50%;
+  padding: 16px;
+  color:black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.Dots{
+  text-align: center;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+}
+.active {
+  background-color: gray;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}  
+
+
+
+@media screen and (max-width: 850px) {
+
+  .header{
+      text-align: right;
+      margin-right: 5px;
+  }
+  .navbar{
+      display:block;
+      position:sticky;
+      top:0;
+  }
+  .navbar ul{
+      display:none;
+  }
+  
+  .navbar ul.active{
+      display:inline-block;
+      width: 100%;
+      height:400px;
+      background-color: #002648;
+      list-style: none;
+      text-align: center;
+      line-height: 80px;
+  }
+  .navbar ul img{
+      display: none;
+  }
+  .navbar ul li{
+      height: 80px;
+      width:100%;
+      text-align: center;
+  }
+  
+  .navbar ul li a{
+      color: white;
+      font-size: 30px;
+      text-decoration: none;
+      letter-spacing: 2px;
+  
+  }
+  .navbar ul li:hover{
+      background-color:silver;
+  }
+  .navbar ul li:hover a{
+      color:black;
+  }
+  .nav-btn{
+      display: block;
+      font-size:35px;
+      background-color: #002648;
+      color:white;
+      height:50px;
+  }
+  .nav-btn img{
+      height:50px;
+      float: right;
+  }
+  .caption {font-size: 11px}
+
+}    
+
+.team{
+  background-color: rgb(214, 228, 248);
+  font-style: serif;
+}
+
+.team .wrapper{
+  margin-top: 7%;
+}
+
+.team .wrapper h1{
+  font-size: 52px;
+  padding: 50px;
+  margin-bottom: 100px;
+  text-align: center;
+  color: rgb(13, 42, 85);
+}
+
+.team_members{
+  display: flex;
+  text-align: center;
+  width: auto;
+
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team_members .team_member{
+  background-color: #fff;
+  margin: 10px;
+  margin-bottom: 100px;
+  width: 375px;
+  padding: 20px;
+  position: relative;
+}
+
+.team_members .team_member h3{
+  color: darkslateblue;
+  font-size: 27px;
+  margin-top: 0px;
+}
+
+.team_members .team_member p.role{
+  color: deepskyblue;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+
+.team_members .team_member .team_img{
+  width: 200px;
+  height: 200px;
+
+}
+
+.team_members .team_member .team_img img{
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+/*<style type="text/css">
+{
+	padding:0;
+	margin:0;
+}
+ 
+html{
+	background-color: white;
+}
+ 
+body{
+	font:16px/1.6 Arial,  sans-serif;
+}
+ 
+header{
+	text-align: center;
+	padding-top: 100px;
+	margin-bottom:190px;
+}
+ 
+header h1{
+	font: normal 32px/1.5 'Open Sans', sans-serif;
+	color: #3F71AE;
+	padding-bottom: 0;
+}
+ 
+header h2{
+	color: #F05283;
+}
+ 
+header span{
+	color: #3F71EA;
+}
+ 
+ */
+/*The footer is fixed to the bottom of the page */
+ 
+footer{
+	position: fixed;
+	bottom: 0;
+}
+ 
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+ 
+ 
+.footer-distributed{
+	background-color: #2c292f;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 0;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+.wrap-text{
+overflow-wrap:anywhere;}
+/* Footer left */
+ 
+.footer-distributed .footer-left{
+	width: 25%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+/* The company logo */
+ 
+.footer-distributed .footer-left img{
+	width: 60%;
+}
+ 
+.footer-distributed h3 span{
+	color:  #4fb5e8;
+}
+ 
+/* Footer links */
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #4fb5e8;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+/* Footer Center */
+ 
+.footer-distributed .footer-center{
+	width: 40%;
+    margin-left: 0px;
+}
+ 
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #4fb5e8;
+	text-decoration: none;
+}
+ 
+ 
+/* Footer Right */
+ 
+.footer-distributed .footer-right{
+	width: 30%;
+    margin: 0px;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color: #4fb5e8;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #4fb5e8;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+ 
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+ 
+ 
+@media (max-width: 800px) {
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+        
+	}
+ 
+	/*.footer-distributed .footer-center i{
+		margin-left: 0;*/
+	}
+    
+    /*.footer-distributed .footer-right{
+		margin: 0;*/
+}
+
+
+.form-style-6{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 16px;
+	background: #4fb5e8;
+}
+.form-style h1{
+	background: #4fb5e8;
+	padding: 20px 0;
+	font-size: 200%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+.form-style input,
+.form-style textarea,
+.form-style select 
+{   background: #fff;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style input:focus,
+
+.form-style textarea:focus,
+.form-style select:focus
+{
+	box-shadow: 0 0 5px #4fb5e8;
+	padding: 3%;
+	border: 1px solid #4fb5e8;
+}
+
+.form-style input[type="submit"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+    font-weight: 300;
+	background: #4fb5e8;
+	border-bottom: 2px solid #4fb5e8;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+	color: #fff;
+}
+
+/*</style>*/
