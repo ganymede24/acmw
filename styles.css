@@ -96,6 +96,61 @@ body {
   font-size: 23px;
   background: rgb(214, 228, 248);
 }
+
+.initiatives{
+  background: white;
+  padding-bottom: 100px;
+  padding-top: 10px;
+  margin: 0;
+}
+.initiative{
+  font-size: 52px;
+  padding-top: 30px;
+  text-align: center;
+  color: black;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  padding-bottom: -20px!important;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: center;
+  align-items: stretch;
+  border: hidden;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 300px;
+  margin: 35px;
+  text-align: center;
+  height: 450px;
+  font-size: 30px;
+  align: center;
+  border: ridge;
+  box-shadow:10px 10px black; 
+  padding-top: 20px;
+}
+
+.flex-container h2 {
+  font-size: 100 px;
+  color: rgb(0, 34, 102);
+}
+
+.flex-container h5 {
+  font-size: 30 px;
+  font-weight: normal;
+  color: black;
+}
+    
+.flex-container h2, .flex-container h5 {
+  margin: 0;
+  font-family: Garamond,Times,Perputua;
+}
+
 .events{
   box-sizing: border-box;
 }
@@ -306,7 +361,7 @@ body {
   transform: translateX(-50%);
   background-color: #fff;
 }
- 
+
 footer{
 	position: fixed;
 	bottom: 0;
