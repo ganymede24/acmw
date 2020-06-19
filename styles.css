@@ -8,7 +8,14 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }    
-
+hr{
+  border:none;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid ghostwhite;
+  box-shadow: 0 10px 10px -10px #444;
+  margin: -70px auto 10px;
+}
 .header{
   display:block;
   position:relative;
@@ -20,6 +27,8 @@ body {
   background: black;
   width: 100%;
   color: white;
+  font-family: cursive;
+  font-weight: 600;
 } 
 .navbar{
   display:block;
@@ -27,6 +36,7 @@ body {
   z-index: 1;
   height: 50px;
   top:0;
+  box-shadow: 0px 4px 8px 0px #444;
 }
 .navbar ul{
   display:inline-block;
@@ -57,14 +67,17 @@ body {
   font-size: 23px;
   text-decoration: none;
   letter-spacing: 2px;
-
+  font-weight: 700;
 }
 .navbar ul li:hover{
-  background-color: silver;
+  background-color: #148;
+  box-shadow: 0px 2px 2px 0px #444;
 }
 
 .navbar ul li:hover a{
-  color:black;
+  color: white;
+  font-size: 25px;
+  font-style: bold;
 }
 .home{
   display: flex;
@@ -72,13 +85,13 @@ body {
   align-items: center;
   height: auto;
   width: 100%;
-  background: rgb(214, 228, 248);
+  background: white;
   flex-wrap: wrap;
+  margin: 0;
 }
 .home .imgbx{
   height: 300px;
   width: auto;
-  background: rgb(214, 228, 248);
   margin-top: 60px;
   margin-bottom: 60px;
 }
@@ -89,19 +102,19 @@ body {
 .home .content{
   height: auto;
   width: 750px;
-  background: rgb(214, 228, 248);
 }
 .home .content p{
   color: black;
   font-size: 23px;
-  background: rgb(214, 228, 248);
+  padding: 20px;
 }
 
 .initiatives{
   background: white;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
   padding-top: 10px;
   margin: 0;
+  height: auto;
 }
 .initiative{
   font-size: 52px;
@@ -120,6 +133,7 @@ body {
   justify-content: center;
   align-items: stretch;
   border: hidden;
+  height: auto;
 }
 
 .flex-container > div {
@@ -127,7 +141,7 @@ body {
   width: 300px;
   margin: 35px;
   text-align: center;
-  height: 450px;
+  height: auto;
   font-size: 30px;
   align: center;
   border: ridge;
@@ -144,6 +158,8 @@ body {
   font-size: 30 px;
   font-weight: normal;
   color: black;
+  padding: 10px;
+  padding-bottom: 40px;
 }
     
 .flex-container h2, .flex-container h5 {
@@ -160,8 +176,8 @@ body {
 }
 .Slide img{
   vertical-align: middle;
-  width:100%;
-  height: 800px;
+  width:80%;
+  height: 600px;
 }
 .slideshow{
   max-width: 90%;
@@ -194,7 +210,10 @@ body {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
+.prev{
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
@@ -245,7 +264,8 @@ body {
       display:block;
       position:sticky;
       top:0;
-  }
+      box-shadow: 0px 4px 4px 0px #444;
+}
   .navbar ul{
       display:none;
   }
@@ -276,10 +296,11 @@ body {
   
   }
   .navbar ul li:hover{
-      background-color:silver;
+      background-color: #148;
   }
   .navbar ul li:hover a{
-      color:black;
+      color:white;
+      font-size: 32px;
   }
   .nav-btn{
       display: block;
