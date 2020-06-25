@@ -24,7 +24,7 @@ hr{
   font-size: 25px;
   letter-spacing: 3px;
   line-height:60px;
-  background: black;
+  background: rgb(188, 192, 194);
   width: 100%;
   color: white;
   font-family: cursive;
@@ -41,7 +41,7 @@ hr{
 .navbar ul{
   display:inline-block;
   height:50px;
-  background-color: #002648;
+  background-color: rgb(198, 202, 204);
   width:100%;
   list-style: none;
   text-align: center;
@@ -57,20 +57,22 @@ hr{
 
 .nav-btn{
   display:none;
+  margin-left: 3vw;
+  background-color: rgb(198, 202, 204);
 }
 .navbar ul img{
   height:50px;
 }
 
 .navbar ul li a{
-  color: white;
+  color: black;
   font-size: 23px;
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: 700;
 }
 .navbar ul li:hover{
-  background-color: #148;
+  background-color: rgb(151, 163, 177);
   box-shadow: 0px 2px 2px 0px #444;
 }
 
@@ -174,23 +176,23 @@ hr{
 
 .Slide{
   display:none;
+  margin-top: -1%;
 }
 .Slide img{
   vertical-align: middle;
-  width:80%;
-  height: 600px;
+  width:90%;
+  height: 40vw;
 }
 .slideshow{
-  max-width: 90%;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
 .Caption{
   color:black;
-  font-size: 22px;
-  padding: 8px 12px;
+  font-size: 4vw;
   position: absolute;
-  bottom: 8px;
+  margin-top: -8%;
   width: 100%;
   text-align: center;
 }
@@ -198,7 +200,7 @@ hr{
   cursor: pointer;
   position: absolute;
   width: auto;
-  top: 50%;
+  top: 43%;
   padding: 16px;
   color:black;
   font-weight: bold;
@@ -216,10 +218,11 @@ hr{
   border-radius: 3px 0 0 3px;
 }
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.541);
 }
 .Dots{
   text-align: center;
+  margin-top: 1vw;
 }
 .dot {
   height: 15px;
@@ -266,6 +269,7 @@ hr{
       position:sticky;
       top:0;
       box-shadow: 0px 4px 4px 0px #444;
+      background-color: rgb(198, 202, 204);
 }
   .navbar ul{
       display:none;
@@ -275,7 +279,7 @@ hr{
       display:inline-block;
       width: 100%;
       height:400px;
-      background-color: #002648;
+      background-color: rgb(198, 202, 204);
       list-style: none;
       text-align: center;
       line-height: 80px;
@@ -290,14 +294,14 @@ hr{
   }
   
   .navbar ul li a{
-      color: white;
+      color: black;
       font-size: 30px;
       text-decoration: none;
       letter-spacing: 2px;
   
   }
   .navbar ul li:hover{
-      background-color: #148;
+      background-color: rgb(151, 163, 177);
   }
   .navbar ul li:hover a{
       color:white;
@@ -306,7 +310,7 @@ hr{
   .nav-btn{
       display: block;
       font-size:35px;
-      background-color: #002648;
+      background-color: rgb(198, 202, 204);
       color:white;
       height:50px;
   }
